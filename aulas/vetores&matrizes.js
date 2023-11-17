@@ -1,3 +1,3 @@
 let pokemon = ["pikachu", "charmander", "bulbassaur"]
 
-console.log(pokemon)
+console.log(pokemon[2])
