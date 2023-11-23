@@ -10,8 +10,13 @@ for (let contador = 0; contador < 10; contador++) {
 
 console.log(pontosDeVida + " porções tomadas")
 
-let i = 0
+let i = 3
 while (i < 3) {
     console.log("olá")
     i++;
 }
+
+do {
+    console.log("olá")
+    i++
+}while (i < 6);
