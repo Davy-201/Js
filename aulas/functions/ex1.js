@@ -1,12 +1,21 @@
+function main() {
+    torrar("pão integral");
+    ejetandoPão("pão integral");
+    pedido("joão");
+}
 
-function torrar() {
+function torrar(brad) {
     console.log("torrando pão")
-    ejetandoPão();
+    console.log("torrada feita com " + brad)
 }
 
-function ejetandoPão() {
+function ejetandoPão(brad) {
     console.log("preparando para ejetar pão")
-    console.log("finalizado")
+    console.log(brad + " ejetado")
 }
 
-torrar();
+function pedido(name) {
+    console.log("pedido feito por " + name)
+}
+
+main();
