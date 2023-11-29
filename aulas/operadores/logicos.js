@@ -11,11 +11,11 @@ let guardaChuva = true;
 let podeSair = (tempo !== "chuva" || guardaChuva === true);
 if (tempo === "sol"){
         let clima = " ensolarado"
-        console.log("o clima esta: " + clima)
+        console.log(`o clima esta: ${clima}`)
     }else {
         let clima = "chuvoso"
-        console.log("o clima esta: " + clima)
+        console.log(`o clima esta: ${clima}`)
     }
 
-console.log("temos um guarda chuva? " + guardaChuva)
-console.log("podemos sair? " + podeSair)
+console.log(`temos um guarda chuva? ${guardaChuva}`)
+console.log(`podemos sair? ${podeSair}`)
