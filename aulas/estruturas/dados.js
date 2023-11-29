@@ -1,13 +1,13 @@
 //JSON - JavaScript Object Notation
 // chave e valor com o objetivo de transferir dados
 let invoice = {
-	name: "felipe",
-    age: 28,
+	name: "Davy",
+    age: 20,
     products: {
     	0: ["mouse 2xwm", 29.90],
-        1: ["Teclado mecânico", 129.99],
-        2: ["Monitor", "899.99"],
-        3: ["TV 100 polegadas", "10000.90"]
+        1: ["Monitor", 129.99],
+        2: ["intel core i5", "899.99"],
+        3: ["RTX 3060 olx", "10000.90"]
     },
     taxes: "98.90"
 }
