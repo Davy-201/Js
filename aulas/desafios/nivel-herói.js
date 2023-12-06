@@ -16,7 +16,7 @@ while (xpHeroi < 10500) {
 
 if (xpHeroi <= 1000) {
     console.log(`o herói ${nameHero} está no nivel de ${nivel[0]}`);
-;
+
 }
 else if (xpHeroi > 1000 && xpHeroi <= 2000) {
     console.log(`o herói ${nameHero} está no nivel de ${nivel[1]}`);
