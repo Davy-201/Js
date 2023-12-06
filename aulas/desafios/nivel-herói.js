@@ -1,5 +1,6 @@
-let nameHero = "deku";
+const nameHero = "deku";
 let xpHeroi = 0;
+let = ['Ferro', 'Bronze', 'Prata', 'Ouro', 'Platina', 'Ascendente', 'Imortal', 'Radiante']
 
 for (let contador = 0; contador < 5000; contador +=2500 ) {
     xpHeroi += 2500
