@@ -7,17 +7,21 @@ Código da condição de pagamento:
 - Acima, preço nromal de etiqueta mais juros de 10% */
 
 const priceProduct = 100;
+const paymentMethod = 1
 const debito = priceProduct - (priceProduct * 0.1);
 const monay = priceProduct - (priceProduct * (15/100));
 const parcela = priceProduct + (priceProduct * 0.1);
 
-let buy = 'money';
-
-if (buy === 'debito') {
+if (paymentMethod === 1) {
     console.log(`você ganhou 10% de desconto, total: ${debito}`);
 } 
-else if (buy === 'money') {
+
+else if (paymentMethod === 2) {
     console.log(`você ganhou 15% de desconto, total: ${monay}`);
+}
+
+else if (paymentMethod === 3) {
+    console.log(`valor total da compra parcelado em 2x: ${priceProduct}`);
 }
 
 else {
