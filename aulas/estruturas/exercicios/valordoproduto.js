@@ -13,17 +13,17 @@ const monay = priceProduct - (priceProduct * (15/100));
 const parcela = priceProduct + (priceProduct * 0.1);
 
 if (paymentMethod === 1) {
-    console.log(`você ganhou 10% de desconto, total: ${debito}`);
+    console.log(`você ganhou 10% de desconto, total: ${debito} Reais`);
 } 
 
 else if (paymentMethod === 2) {
-    console.log(`você ganhou 15% de desconto, total: ${monay}`);
+    console.log(`você ganhou 15% de desconto, total: ${monay} Reais`);
 }
 
 else if (paymentMethod === 3) {
-    console.log(`valor total da compra parcelado em 2x: ${priceProduct}`);
+    console.log(`valor total da compra parcelado em 2x: ${priceProduct} Reais`);
 }
 
 else {
-    console.log (`valor da compra parcelada: ${parcela}`);
+    console.log (`valor da compra parcelada: ${parcela} Reais`);
 };
