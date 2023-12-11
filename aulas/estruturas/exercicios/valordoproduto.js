@@ -6,24 +6,31 @@ Código da condição de pagamento:
 - Em 2x preço normal de etiqueta sem juros
 - Acima, preço nromal de etiqueta mais juros de 10% */
 
-const priceProduct = 100;
-const paymentMethod = 1
-const debito = priceProduct - (priceProduct * 0.1);
-const monay = priceProduct - (priceProduct * (15/100));
-const parcela = priceProduct + (priceProduct * 0.1);
-
-if (paymentMethod === 1) {
-    console.log(`você ganhou 10% de desconto, total: ${debito} Reais`);
-} 
-
-else if (paymentMethod === 2) {
-    console.log(`você ganhou 15% de desconto, total: ${monay} Reais`);
+function aplicarDesconto(value, discount) {
+    return value - (value * (discount/100));
 }
 
-else if (paymentMethod === 3) {
-    console.log(`valor total da compra parcelado em 2x: ${priceProduct} Reais`);
+function aplicarJuros(value, juros) {
+    return value + (value * (juros/100));
 }
 
-else {
-    console.log (`valor da compra parcelada: ${parcela} Reais`);
-};
+function fazerPagamento(paymentMethod) {
+    if (paymentMethod === 1) {
+        console.log(`você ganhou 10% de desconto, total: ${aplicarDesconto(priceProduct, 10)} Reais`);
+    } 
+    
+    else if (paymentMethod === 2) {
+        console.log(`você ganhou 15% de desconto, total: ${aplicarDesconto(priceProduct, 15)} Reais`);
+    }
+    
+    else if (paymentMethod === 3) {
+        console.log(`valor total da compra parcelado em 2x: ${priceProduct} Reais`);
+    }
+    
+    else {
+        console.log (`valor da compra parcelada: ${aplicarJuros(priceProduct,10)} Reais`);
+    }
+}
+    const priceProduct = 100;
+    fazerPagamento(1);
+    
