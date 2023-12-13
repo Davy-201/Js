@@ -5,6 +5,7 @@ Código da condição de pagamento:
 - À vista em espécie ou pix, recebe 15% de desconto
 - Em 2x preço normal de etiqueta sem juros
 - Acima, preço nromal de etiqueta mais juros de 10% */
+const priceProduct = 100;
 
 function aplicarDesconto(value, discount) {
     return value - (value * (discount/100));
@@ -30,7 +31,4 @@ function fazerPagamento(paymentMethod) {
     else {
         console.log (`valor da compra parcelada: ${aplicarJuros(priceProduct,10)} Reais`);
     }
-}
-    const priceProduct = 100;
-    fazerPagamento(1);
-    
+}(1);
