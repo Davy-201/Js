@@ -24,3 +24,15 @@ const mateus = new person('mateus', 20);
 
 davy.descrever();
 mateus.descrever();
+
+function compararPessoas(person1, person2) {
+    if (person1.age > person2.age){
+        console.log(`${person1.name} é mais velho(a) que ${person2.name}`);
+    
+    }else if (person1.age < person2.age) {
+        console.log(`${person1.name} é mais novo(a) que ${person2.name}`);
+    
+    }else console.log('ambos tem a mesma idade');
+}
+
+compararPessoas(davy, mateus);
