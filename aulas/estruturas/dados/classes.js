@@ -1,4 +1,4 @@
-class formaDeBolo{
+class FormaDeBolo{
     constructor(saborDaMassa, saborDoRecheio){
         this.saborDaMassa = saborDaMassa
         this.saborDoRecheio = saborDoRecheio
@@ -9,7 +9,7 @@ class formaDeBolo{
     }
 };
 
-let boloFesta = new formaDeBolo("chocolate", "nutella");
+let boloFesta = new FormaDeBolo("chocolate", "nutella");
 
 console.log(`qual o é o recheio do bolo? ${boloFesta.saborDoRecheio}`)
 
