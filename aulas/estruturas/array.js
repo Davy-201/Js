@@ -1,5 +1,11 @@
-const alunos = ['joão', 'Renan', 'Maria'];
+const notas = [];
 
-alunos.push('José');
+notas.push(2);
+notas.push(7);
+notas.push(6);
+notas.push(8);
+notas.push(5);
 
-alunos[4] = 'Vinícius';
+const soma = notas[0] + notas[1] + notas[2] + notas[3] + notas[4];
+
+console.log(soma / notas.length);
