@@ -6,6 +6,11 @@ notas.push(6);
 notas.push(8);
 notas.push(5);
 
-const soma = notas[0] + notas[1] + notas[2] + notas[3] + notas[4];
+let soma = 0;
 
+for (let index = 0; index < notas.length; index++) {
+    const nota = notas[index];
+    soma += nota;
+}
+console.log(soma)
 console.log(soma / notas.length);

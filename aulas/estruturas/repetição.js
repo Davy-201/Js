@@ -21,3 +21,10 @@ do {
     console.log("olá")
     i++
 }while (i < 6);
+
+const name = 'Davy Rodrigues'
+
+for (let index = 0; index < name.length; index++) {
+    const letras = name[index];
+    console.log(letras);
+}
