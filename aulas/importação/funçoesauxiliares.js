@@ -2,8 +2,8 @@ function gets() {
     return 10;
 }
 
-function print() {
-    console.log('hello')
+function print(texto) {
+    console.log(texto)
 }
 
 
