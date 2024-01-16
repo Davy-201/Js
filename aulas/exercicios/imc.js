@@ -1,6 +1,4 @@
 function main() {
-    const weight = 78;
-    const height = 1.87;
     const imc = calculatorImc(78, 1.87);
 
     console.log(`seu peso:${imc.toFixed(1)} ${classifyImc(imc)}`);
